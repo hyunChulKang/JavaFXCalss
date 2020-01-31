@@ -46,11 +46,11 @@ public class T08_AlertTest extends Application{
 		//========================================================
 		
 		//Javascript의 Prompt창과 같은 기능
-		
+		//'기본값'은 생략 가능
 		TextInputDialog inputDialog = new TextInputDialog("기본값");
 		inputDialog.setTitle("Prompt창");
 		inputDialog.setHeaderText("TextInputDialog창입니다.");//출력메시지
-		
+		// 창을 보이고 입력한 값을 받는
 		Optional<String> result  = inputDialog.showAndWait();
 		String strResult = null;	//입력한 값이 저장될 변수 선언
 		
