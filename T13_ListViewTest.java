@@ -59,7 +59,7 @@ public class T13_ListViewTest extends Application{
 			
 			return new ListCell<String>() {
 				protected void updateItem(String item, boolean empty) {		//셀이 처음만들어잘때 updateItem이 생성된다.
-					super.updateItem(item, empty);
+					super.updateItem(item, empty);		//item -> 넘어온 값
 					
 					//변경 되는 데이터가 문자열이면 setText()를 사용함.
 					//setText(item);

@@ -135,10 +135,11 @@ public class T16_DialogTest extends Application{
 				
 				try {
 					parent = FXMLLoader.load(getClass().getResource("myDialog.fxml"));
+					
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-
+					
 				// 부모창에서 FXML로 만든 자식창의 컨트롤객체 얻기
 				TextField txtName = (TextField) parent.lookup("#txtName"); //lookup찾는기능
 				
